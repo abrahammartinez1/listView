@@ -39,7 +39,7 @@ public class listViewObserver extends JFrame implements Observer {
         add(new JScrollPane(list), BorderLayout.CENTER);
 
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(300, 200);
+        setSize(400, 300);
         setLocationRelativeTo(null);
         setVisible(true);
     }
