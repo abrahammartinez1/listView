@@ -9,11 +9,11 @@ import java.util.Observer;
 import javax.swing.*;
 
 public class listViewObserver extends JFrame implements Observer {
-    private List<String> items = new ArrayList<>();
-    private DefaultListModel<String> model = new DefaultListModel<>();
-    private JList<String> list = new JList<>(model);
-    private JTextField textField = new JTextField(20);
-    private JButton addButton = new JButton("Add");
+    private final List<String> items = new ArrayList<>();
+    private final DefaultListModel<String> model = new DefaultListModel<>();
+    private final JList<String> list = new JList<>(model);
+    private final JTextField textField = new JTextField(20);
+    private final JButton addButton = new JButton("Add");
 
     public listViewObserver() {
         // Hacer que la lista sea observable
@@ -58,7 +58,7 @@ public class listViewObserver extends JFrame implements Observer {
     }
 
     private static class ObservableList extends Observable {
-        private List<String> items;
+        private final List<String> items;
 
         public ObservableList(List<String> items) {
             this.items = items;
