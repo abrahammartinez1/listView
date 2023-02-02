@@ -39,7 +39,7 @@ public class listViewObserver extends JFrame implements Observer {
         add(new JScrollPane(list), BorderLayout.CENTER);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(400, 300);
-        setTitle("PROGRAMACION CONCURRENTE FeedBack 2 - Abraham Martínez");
+        setTitle("PROGRAMACIÓN CONCURRENTE FeedBack 2 - Abraham Martínez");
         setLocationRelativeTo(null);
         setVisible(true);
     }
